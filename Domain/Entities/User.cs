@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace CleanArchitecture.Domain.Entities
 {
-    internal class User
+    public sealed class User : BaseEntity
     {
+        public string? Email { get; set; }
+        public string? Name { get; set; }
     }
 }
